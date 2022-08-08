@@ -20,6 +20,7 @@ class CategoriesRepository implements ICategoriesRepository {
 
   // Create category
   async create({ name, description }: ICreateCategoryDTO): Promise<void> {
+    // create category
     const category = this.repository.create({
       name,
       description,

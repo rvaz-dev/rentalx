@@ -5,14 +5,11 @@ import { CategoriesRepository } from "../../modules/cars/repositories/implementa
 import { SpecificationRepository } from "../../modules/cars/repositories/implementations/SpecificatiomRepository";
 import { ISpecificationRepository } from "../../modules/cars/repositories/ISpecificatiomRepository";
 
-// ICategoriesRepository
 container.registerSingleton<ICategoriesRepository>(
   "CategoriesRepository",
   CategoriesRepository
 );
-
-// ISpecificationRepository
 container.registerSingleton<ISpecificationRepository>(
-  "CategoriesRepository",
+  "SpecificationsRepository",
   SpecificationRepository
 );
